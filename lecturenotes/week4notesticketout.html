@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Smith Scholarship</h1>
+        <h2> Tables</h2>
+        <table>
+            <head>
+                <meta charset="utf-8">
+                <title>Week 4 Forms and Tables</title>
+                <style>
+                    td, th {border: 1px solid black;}
+                </style>
+            </head>
+            <body>
+                <table>
+            <caption>Smith Scholarship</caption>
+            <tr>
+                <th>Name of scholarship</th> <!-- th tag is for headers/meta -->
+                <th>Amount</th>
+                <th>Award date</th>
+            </tr>
+            <tr>
+                <td>Osman scholarship</td> <!-- td is for data -->
+                <td>5,000</td>
+                <td>7/11/2024</td>
+            </tr>
+            <tr>
+                <td>Smith scholarship</td>
+                <td>10,000</td>
+                <td>1/21/2024</td>
+            </tr>
+        </table>
+
+    <h2>Forms</h2>
+    <forms action="" method="post"> 
+        <label for="fullname">Full name: </label>
+        <input type="text" id="fullname" name="Full Name"> <br> <!-- block go to the next line and have margin around them  -->
+
+        <label for="school year">School year</label><br>
+            <select id="school year" name="school yeear">
+                <option></option>
+                <option value="sophmore">Sophmore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select><br>
+            <input type="submit" value="send form">
