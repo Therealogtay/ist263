@@ -1,3 +1,5 @@
-selector {
-    accent-color: purple;
-}
+body {font-family: 15px Arial, sans-serif;}
+h1, h2 {color: gold; }
+.evenrow {background-color: purple; }
+h1 {font-size: 3em; }
+h2 {font: 2em; }
