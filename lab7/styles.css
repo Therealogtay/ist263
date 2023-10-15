@@ -1,9 +1,24 @@
-body {font-family: 15px Arial, sans-serif;}
-nav a {color: #eeeeee;}
-h1, h2 {color: gold; }
-.evenrow {background-color: #FFFFFF; }
-h1 {font-size: 3em; }
-h2 {font: 2em; }
-body {
-    background-color: #5095C7;
+body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucinda Sans', Arial, sans-serif;
 }
+h1, h2 {color: gold; 
+        font-size: 1em;}
+.evenrow {
+    background-color: #FFFFFF; 
+}
+body {
+    background-color: #5095C7;}
+    p {
+        color:#7950C7;
+        background-color: #eeeeee;
+        padding:20px;
+        border: 2px solid #C78B50;
+        margin: 40px;
+    }
+    nav {
+        background-color: #85C750;
+        color: #FFFFFF;
+        padding: 10px;
+    margin-bottom: 30px;}
+nav a {color: #5079C7;}
+nav a:hover {background-color: #FFFFFF;}
+
