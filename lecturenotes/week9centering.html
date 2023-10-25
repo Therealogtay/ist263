@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        p {text-align: center;}
+        .block {
+            background-color: aqua;
+            width: 50%;
+            margin: 0 auto;
+            .flexcentering {
+                display: flex;
+                justify-content: center; /*this is a property of flexboxes */
+            }
+            img {width: 120px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Centering</h1>
+    <h2>Inline Centering with text-align</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae expedita, deleniti dignissimos ratione commodi nemo quidem, officiis autem necessitatibus obcaecati libero, assumenda omnis eligendi odio esse placeat accusamus! Facere.</p>class
+    <h2>Block Centering</h2>
+    <p class="block"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit in placeat, consectetur officia dolorum qui saepe architecto ullam ipsum assumenda at, laborum odio suscipit eum ab cumque repudiandae unde!</p>
+    <h2>Hacky Centering with Flexbox</h2>
+    <!-- this method works best when your content dosent take the fukk width -->
+    <p class="flexcentering"><img src="../images/Otto.jfif"></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        /* Apply a background color to the entire body */
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Create a flex container to arrange items horizontally */
+        .flex-container {
+            display: flex;
+            justify-content: space-between; /* Distribute items with space in between */
+            background-color: #fff; /* Background color for the container */
+            padding: 20px; /* Add some padding to the container */
+        }
+
+        /* Style individual flex items */
+        .flex-item {
+            width: 30%; /* Set the width of each item */
+            background-color: #3498db; /* Background color for items */
+            color: #fff; /* Text color */
+            padding: 10px; /* Add padding to the items */
+            text-align: center; /* Center align text */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item
+
+
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .flexbox {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            padding: 20px;
+            background: linear-gradient(to right, purple, gold);
+            color: white;
+        }
+        .copyright {
+            background-color: purple;
+        }
+        .quote {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Participation</h1>
+        <div class="flexbox">
+            <div class="copyright">
+                <h2>Copyright 2023</h2>
+            </div>
+            <div class="quote">
+                <h2>Quote</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
