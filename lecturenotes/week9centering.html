@@ -35,108 +35,43 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Apply a background color to the entire body */
-        body {
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Create a flex container to arrange items horizontally */
-        .flex-container {
-            display: flex;
-            justify-content: space-between; /* Distribute items with space in between */
-            background-color: #fff; /* Background color for the container */
-            padding: 20px; /* Add some padding to the container */
-        }
-
-        /* Style individual flex items */
-        .flex-item {
-            width: 30%; /* Set the width of each item */
-            background-color: #3498db; /* Background color for items */
-            color: #fff; /* Text color */
-            padding: 10px; /* Add padding to the items */
-            text-align: center; /* Center align text */
+        td, th {border: 1px solid black;}
+        p {text-align: center;}
+        .block {
+            background-color: aqua;
+            width: 50%;
+            margin: 0 auto;
+            .flexcentering {
+                display: flex;
+                justify-content: center; /*this is a property of flexboxes */
+            }
+            img {width: 120px;}
         }
     </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-item">Item 1</div>
-        <div class="flex-item">Item
-
-
-
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participation</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .title {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .flexbox {
-            display: flex;
-            justify-content: space-between;
-            width: 400px;
-            padding: 20px;
-            background: linear-gradient(to right, purple, gold);
-            color: white;
-        }
-        .copyright {
-            background-color: purple;
-        }
-        .quote {
-            background-color: gold;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">Participation</h1>
-        <div class="flexbox">
-            <div class="copyright">
-                <h2>Copyright 2023</h2>
-            </div>
-            <div class="quote">
-                <h2>Quote</h2>
-            </div>
-        </div>
-    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>My Technical Skills</h1> <!-- Main Heading for Technical Skills -->
+    <table>
+        <caption>Technical Skills</caption>
+        <tr>
+            <th>Category</th>
+            <th>Skill</th>
+            <th>Competency Level</th>
+        </tr>
+        <!-- The rest of your table content here -->
+    </table>
 </body>
 </html>

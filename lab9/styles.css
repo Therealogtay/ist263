@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-item {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.other-skills {
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+.other-skills h2 {
+    text-align: center;
+}
