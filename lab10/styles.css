@@ -17,3 +17,7 @@
 .other-skills h2 {
     text-align: center;
 }
+
+.size {
+    max-width: 100%;
+}
