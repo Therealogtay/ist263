@@ -1,23 +1,41 @@
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-}
-.flex-item {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-.other-skills {
-    background-color: gold;
-    color: black;
-    border-radius: 10px;
-    padding: 20px;
-}
-.other-skills h2 {
-    text-align: center;
-}
 
-.size {
-    max-width: 100%;
-}
+@media screen and (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .flex-item {
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .other-skills {
+        background-color: gold;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .other-skills h2 {
+        text-align: center;
+    }
+    
+    .size {
+        max-width: 100%;
+    }
+    nav a {
+            font-size: 16px;
+            display: block; 
+            width: 100%; 
+            text-align: center; 
+            padding: 10px; 
+        }
+
+    nav span {
+        display: none; 
+    }
+    }
+  
+
+
+
