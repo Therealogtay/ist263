@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Rentals</title>
+    <style>
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="Osman Rentals">Home</a>
+    <a href="Reservation">Reserve A Vehicle</a>
+    <a href="Location">Location</a>
+    <div class="centered-text">
+        <p style="font-size: 25px;">
+            <strong>Welcome to Osman’s Exotic Rentals where we provide our clients with the best vehicles there are to offer in the market for the best prices. We do this by finding high-end luxury/exotic cars we could rent out to the public who may not have access to them. Our fleet includes all of the newest models from your favorite brands like Lamborghini, Ferrari, McLaren, Rolls Royce, and more. You have taste, we have options. Pick out your vehicle, make your reservation, and enjoy.</strong>
+        </p>
+    </div>
+    <div id="reservation-section">
+        <h2 style="font-weight: normal">Reserve A Vehicle</h2>
+        <form action="your-booking-script.php" method="post">
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name"> 
+            <label for="car-selection">Select a Car:</label>
+            <select id="car-selection" name="car-selection">
+                <option value="car1">Car 1</option>
+                <option value="car2">Car 2</option>
+                <option value="car3">Car 3</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </div>
+    <nav>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11664.104713083101!2d-76.15324854458011!3d43.0408807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f5e468f11%3A0xb34067c84771a752!2sSyracuse%20University%20Residence%20Life!5e0!3m2!1sen!2sus!4v1694816809537!5m2!1sen!2sus" width="50%" height="225" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </nav>
+</body>
