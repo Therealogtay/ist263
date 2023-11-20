@@ -13,18 +13,13 @@
             height: 350px;
         }
         .smallSize {
-            width: 350px;
-            height: auto;
+            width: 350px; /* Adjust the width for smaller images */
+            height: auto; /* Maintain aspect ratio */
         }
         .centered-text {
             text-align: center;
         }
     </style>
-    <script>
-        function showCarDetails(carName, price) {
-            alert(`Car: ${carName}\nDetails: Luxury Car Rental\nPrice per day: $${price}`);
-        }
-    </script>
 </head>
 <body>
     <a href="Osman Rentals">Home</a>
@@ -37,11 +32,25 @@
         <a><img class="Size" src="../project/media/home.jfif" alt="home"></a><br>
     </div>
     <div id="reservation-section">
-        <p style="font-size: 20px;">
-            To reserve a vehicle, please proceed to the <a href="#reservation-page">Reserve A Vehicle</a> section below.
-        </p>
+        <h2 style="font-weight: normal">Reserve A Vehicle</h2>
+        <form action="your-booking-script.php" method="post">
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name"> 
+            <label for="car-selection">Select a Car:</label>
+            <select id="car-selection" name="car-selection">
+                <option value="Car 1">Bentley Bentayga</option>
+                <option value="Car 2">Lamborghini Urus</option>
+                <option value="Car 3">Mercedes Maybach</option>
+                <option value="Car 4">Mclaren 720s</option>
+                <option value="Car 5">Rolls Royce Ghost</option>
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+            <input type="submit" value="Submit Reservation">
+        </form>
     </div>
-
     <nav>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11664.104713083101!2d-76.15324854458011!3d43.0408807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39f5e468f11%3A0xb34067c84771a752!2sSyracuse%20University%20Residence%20Life!5e0!3m2!1sen!2sus!4v1694816809537!5m2!1sen!2sus" width="75%" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p style="font-size: 20px;">
@@ -49,31 +58,12 @@
             When you go to rent a car with us you have to provide your full name, address, upload a picture of your driver's license and you have to make a safe deposit first before we can let you rent one of our vehicles. 
             If you don't want to submit a photo id you can show up to one of our locations near you and show a physical id instead. 
         </p>
-        <div id="reservation-section">
-            <h2 style="font-weight: normal">Reserve A Vehicle</h2>
-            <form action="your-booking-script.php" method="post">
-                <label for="name">Name</label>
-                <input type="name" id="name" name="name"> 
-                <label for="car-selection">Select a Car:</label>
-                <select id="car-selection" name="car-selection">
-                    <option value="Car 1">Bentley Bentayga</option>
-                    <option value="Car 2">Lamborghini Urus</option>
-                    <option value="Car 3">Mercedes Maybach</option>
-                    <option value="Car 4">Mclaren 720s</option>
-                    <option value="Car 5">Rolls Royce Ghost</option>
-                </select>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time">
-                <input type="submit" value="Submit Reservation">
-            </form>
-        </div>
-        <a onclick="showCarDetails('Bentley Bentayga', 1200)">Bentley Bentayga<img class="smallSize" src="../project/media/bentley.jfif" alt="home"></a>
-        <a onclick="showCarDetails('Lamborghini Urus', 1200)">Lamborghini Urus<img class="smallSize" src="../project/media/urus.jpg" alt="home"></a><br>
-        <a onclick="showCarDetails('Mercedes Maybach', 1200)">Mercedes Maybach<img class="smallSize" src="../project/media/maybach.jfif" alt="home"></a>
-        <a onclick="showCarDetails('Mclaren 720s', 1200)">Mclaren 720s<img class="smallSize" src="../project/media/mclaren.jfif" alt="home"></a><br>
-        <a onclick="showCarDetails('Rolls Royce Ghost', 1200)">Rolls Royce Ghost<img class="smallSize" src="../project/media/rolls.jpg" alt="home"></a>
+        <!-- Adjusted the class for the last 5 images -->
+        <a>Bentley Bentayga<img class="smallSize" src="../project/media/bentley.jfif" alt="home"></a>
+        <a>Lamborghini Urus<img class="smallSize" src="../project/media/urus.jpg" alt="home"></a><br>
+        <a>Mercedes Maybach<img class="smallSize" src="../project/media/maybach.jfif" alt="home"></a>
+        <a>Mclaren 720s<img class="smallSize" src="../project/media/mclaren.jfif" alt="home"></a><br>
+        <a>Rolls Royce Ghost<img class="smallSize" src="../project/media/rolls.jpg" alt="home"></a>
     </nav>
 </body>
 </html>
