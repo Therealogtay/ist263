@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syracuse University Page</title>
+    <style>
+        #suDiv {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="suDiv" onclick="changeText()">Syracuse University</div>
+
+    <script>
+        function changeText() {
+            var suDiv = document.getElementById('suDiv');
+            if (suDiv.innerHTML === 'Syracuse University') {
+                suDiv.innerHTML = 'Orange Nation';
+                suDiv.style.color = 'orange';
+            } else {
+                suDiv.innerHTML = 'Syracuse University';
+                suDiv.style.color = 'black';
+            }
+        }
+    </script>
+</body>
+</html>
