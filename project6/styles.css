@@ -62,12 +62,29 @@ p {
 }
 
 
-
-
-
-
-
-
+#cta {
+    text-align: center;
+    padding: 20px;
+    background-color:  #333; /* Light background for the call-to-action section */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3px 7px;
+    margin-top: auto;
+}
 nav {
     background-color: #333; /* Dark background color for the navigation */
     padding: 5px;
@@ -115,3 +132,29 @@ p {
 .button:hover {
     background-color: #555;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

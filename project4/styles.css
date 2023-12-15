@@ -1,93 +1,116 @@
-/* Add margin at the top of the page */
 body {
+    background-color: skyblue;
     margin-top: 20px;
 }
 
-/* Additional styling for home page */
-#home {
-    text-align: center;
-    margin: 40px auto; /* Adjust the margin for better alignment */
+.Size {
+    width: 75%;
+    height: 350px;
 }
 
-#home h1 {
-    font-size: 36px;
-    color: #333; /* Adjust the color for better visibility */
-    margin-bottom: 20px; /* Add spacing between the title and content */
+.smallSize {
+    width: 350px;
+    height: auto;
+}
+
+.centered-text {
+    text-align: center;
 }
 
 #home p {
-    font-size: 20px;
-    color: #555; /* Adjust the color for better readability */
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
 }
 
-/* Include your existing styles */
-/* ... Your existing styles ... */
-
-
-
-
-
-
-
-
-/* Include your existing styles and add enhancements */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin-top: 20px; /* Margin at the top of the page */
-}
-
-/* ... Your existing styles ... */
-
-.services {
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-}
-
-.services h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.services p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.services ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-#reservation-form {
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-}
-
-#reservation-form h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.car-images {
+nav {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding: 5px;
+    text-align: center;
 }
 
-.car-images a {
+nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
+    margin: 0 10px;
 }
 
-.car-images img {
-    width: 150px;
-    height: auto;
+#home {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
 
+.Size {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
 
+#cta {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+iframe {
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Segoe Script', cursive;
+    color: purple;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+}
+
+#home p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 3px 7px;
+    margin-top: auto;
+}
