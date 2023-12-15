@@ -18,7 +18,7 @@ body {
 }
 
 #home p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Cinzel', cursive;
     font-size: 25px;
 }
 nav {
@@ -51,11 +51,11 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 2px 2px 2px #ccc; 
 }
 p {
-    font-family: 'Great Vibes', cursive; 
+    font-family: 'Cinzel', cursive; 
     font-size: 20px;
 }
 #home p {
-    font-family: 'Great Vibes', cursive; 
+    font-family: 'Cinzel', cursive; 
     font-size: 20px;
     color: black;
     text-shadow: 2px 2px 2px #ccc
