@@ -1,85 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osman Rentals - Reserve A Vehicle</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Page Title</title>
+    <!-- Include your styles and other meta tags here -->
+    <style>
+        /* Your styles go here */
+    </style>
 </head>
-
 <body>
-    <nav>
-        <a href="practice1.html">Home</a>
-        <a href="practice2.html">Reserve A Vehicle</a>
-        <a href="practice3.html">Location</a>
-    </nav>
-    <main>
-        <section class="services">
-            <h2>Our Services</h2>
-            <p>We offer a variety of services designed to make your rental experience more convenient:</p>
-            <ul>
-                <li>Chauffeur services</li>
-                <li>Membership programs</li>
-                <li>Secure rental process</li>
-                <li>Multiple location options</li>
-            </ul>
-            <p>At Osman's Exotic Rentals, we prioritize your safety and satisfaction.</p>
-        </section>
-        <section id="reservation-form">
-            <h2>Reserve A Vehicle</h2><form action="your-booking-script.php" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name"> 
-                <label for="car-selection">Select a Car:</label>
-                <select id="car-selection" name="car-selection">
-                    <option value="None"></option>
-                    <option value="Bentley Bentayga">Bentley Bentayga</option>
-                    <option value="Lamborghini Urus">Lamborghini Urus</option>
-                    <option value="Mercedes Maybach">Mercedes Maybach</option>
-                    <option value="Mclaren 720s">Mclaren 720s</option>
-                    <option value="Rolls Royce Ghost">Rolls Royce Ghost</option>
-                </select>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time">
-                <input type="submit" value="Submit Reservation">
-            </form>
+    <!-- Your HTML content goes here -->
 
+    <!-- JavaScript code for scroll-triggered animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function isInView(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
 
+            function animateOnScroll() {
+                document.querySelectorAll('.fadeInUp').forEach(function(el) {
+                    if (isInView(el)) {
+                        el.classList.add('visible');
+                    }
+                });
+            }
 
-            <div id="location">
-                <h2>Vehicle Selection</h2>
-                <p>Click on the car images to view details:</p>
-        
-
-
-            <nav id="location">
-                <a href="#" onclick="showCarDetails('Bentley Bentayga', 1200)">
-                    <span>Bentley Bentayga</span>
-                    <img class="smallSize" src="../project/media/bentley.jfif" alt="home">
-                </a>
-                <a href="#" onclick="showCarDetails('Lamborghini Urus', 1300)">
-                    <span>Lamborghini Urus</span>
-                    <img class="smallSize" src="../project/media/urus.jpg" alt="home">
-                </a><br>
-                <a href="#" onclick="showCarDetails('Mercedes Maybach', 1000)">
-                    <span>Mercedes Maybach</span>
-                    <img class="smallSize" src="../project/media/maybach.jfif" alt="home">
-                </a>
-                <a href="#" onclick="showCarDetails('Mclaren 720s', 1200)">
-                    <span>Mclaren 720s</span>
-                    <img class="smallSize" src="../project/media/mclaren.jfif" alt="home">
-                </a><br>
-                <a href="#" onclick="showCarDetails('Rolls Royce Ghost', 1300)">
-                    <span>Rolls Royce Ghost</span>
-                    <img class="smallSize" src="../project/media/rolls.jpg" alt="home">
-                </a>
-            </nav>
-    </main>
-    <footer>
-        <p>&copy; 2023 Osman Rentals</p>
-    </footer>
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check
+        });
+    </script>
 </body>
-
 </html>
+

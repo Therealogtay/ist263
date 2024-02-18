@@ -1,32 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+// Listen for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if an element is in view
+    function isInView(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osman Rentals</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../images/Lab14-1.png">
-</head>
+    // Function to animate elements on scroll
+    function animateOnScroll() {
+      document.querySelectorAll('.fadeInUp').forEach(function(el) {
+        if (isInView(el)) {
+          el.classList.add('visible');
+        }
+      });
+    }
 
-<body>
-    <nav>
-        <a href="practice1.html">Home</a>
-        <a href="practice2.html">Reserve A Vehicle</a>
-        <a href="practice3.html">Location</a>
-    </nav>
-    <section class="centered-text" id="home">
-        <h1>Welcome to Osman’s Exotic Rentals</h1>
-        <p style="font-size: 25px;">
-            Providing our clients with the best vehicles in the market at competitive prices. Our fleet includes high-end luxury/exotic cars from brands like Lamborghini, Ferrari, McLaren, Rolls Royce, and more. Choose your vehicle, make a reservation, and enjoy the ride.
-        </p>
-        <a href="#reservation-page"><img class="Size" src="../project/media/home.jfif" alt="home"></a><br>
-    </section>
-    <section id="cta">
-        <h2>Start Your Adventure</h2>
-        <p>Ready to experience luxury? Reserve your dream car today!</p>
-        <a href="practice2.html" class="button">Reserve Now</a>
-    </section>
-</body>
-
-</html>
+    // Trigger the scroll event on page load and on scroll
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Initial check
+  });
