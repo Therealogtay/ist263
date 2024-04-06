@@ -68,7 +68,7 @@ body {
     right: 20px;
     z-index: 999; /* Ensure the icon is on top of other elements */
   }
-  
+
   @media only screen and (max-width: 600px) {
     /* Your existing media query */
   }

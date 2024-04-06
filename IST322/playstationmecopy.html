@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--I decided to make my own site-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Find the best deals on Sony PS5, PS5 bundles, and PS5 deals at PlayStationMe.com. We offer the best prices on PS5 consoles and accessories.">
-  <meta name="keywords" content="Sony PS5, PS5 near me, PS5 bundles, PS5 deals, PS5 for sale">
-  <title>PlayStationMe.com - Find the Best PS5 Deals Now!</title>
+  <meta name="PlaystationMe.com" content="Find the best deals on Sony PS5, PS5 bundles, and PS5 deals at PlayStationMe.com. We offer the best prices on PS5 consoles and accessories.">
+  <meta name="keywords" content="Sony PS5, PS5 near me, PS5 bundles, PS5 deals, PS5 for sale"><!--Here is where i optimized the meta tag-->
+  <title>PlayStationMe.com - Find the Best PS5 Deals Now!</title><!--This is where I enhanced my title tag-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous">
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-305657766-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -83,8 +84,12 @@
 
     .shopping-cart-icon {
       font-size: 24px;
-      color: #007bff;
-      margin-right: 10px;
+      color: white;
+      margin-left: 10px;
+      position: fixed; /* Set the position to fixed */
+      top: 40px; /* Adjust the top position as needed */
+      right: 30px; /* Adjust the right position as needed */
+      z-index: 999; /* Ensure the icon is on top of other elements */
     }
     @media only screen and (max-width: 600px)
      {
@@ -115,6 +120,7 @@
   </style>
 </head>
 <body>
+  <a href="checkout.html" class="shopping-cart-icon"><i class="fas fa-shopping-cart"></i></a>
   <header>
     <h1>We Have the Best PS5 Deals!</h1> 
     <nav>
